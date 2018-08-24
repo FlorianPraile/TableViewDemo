@@ -12,6 +12,7 @@
 		9B38F94221302A1300F5D494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B38F94021302A1300F5D494 /* Main.storyboard */; };
 		9B38F94421302A1400F5D494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B38F94321302A1400F5D494 /* Assets.xcassets */; };
 		9B38F94721302A1400F5D494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B38F94521302A1400F5D494 /* LaunchScreen.storyboard */; };
+		9B38F94F21302F1500F5D494 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B38F94E21302F1500F5D494 /* CustomTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9B38F94321302A1400F5D494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B38F94621302A1400F5D494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B38F94821302A1400F5D494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B38F94E21302F1500F5D494 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				9B38F93C21302A1300F5D494 /* AppDelegate.swift */,
+				9B38F94E21302F1500F5D494 /* CustomTableViewController.swift */,
 				9B38F93E21302A1300F5D494 /* ViewController.swift */,
 				9B38F94021302A1300F5D494 /* Main.storyboard */,
 				9B38F94321302A1400F5D494 /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B38F93F21302A1300F5D494 /* ViewController.swift in Sources */,
+				9B38F94F21302F1500F5D494 /* CustomTableViewController.swift in Sources */,
 				9B38F93D21302A1300F5D494 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,7 +12,15 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var values = ["Hello", "world", "123", "nzlhf"]
+    var values = ["Section 1": ["Hello", "world", "123", "nzlhf"],
+                  "Section 2": ["Hello", "test", "test", "test"],
+                  "Section 3": ["Hello", "123"],
+                  "Section 4": ["123", "123", "123"],
+                ]
+    
+    var sortedKeys: [String]{
+        return Array(values.keys).sorted(by: <)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,24 +35,27 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     //MARK:- TableView Data Source
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return values.keys.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return values.count
+        let section = sortedKeys[section]
+        return values[section]!.count
     }
 
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let elt = values[indexPath.row]
+        let section = sortedKeys[indexPath.section]
+        let elt = values[section]![indexPath.row]
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "CellDemo", for: indexPath)
         cell.textLabel?.text = elt
+        cell.detailTextLabel?.text = "hello"
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Hello"
+        return sortedKeys[section]
     }
 }
 
